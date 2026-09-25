@@ -2,7 +2,8 @@
 
 Adversarial robustness of traffic sign classifiers on **GTSRB** (German Traffic Sign Recognition Benchmark), evaluated with a focus on *which* mistakes matter. Misreading a Stop sign is far more dangerous than misreading a "Road work" sign, so besides standard accuracy this project introduces a four-tier safety taxonomy and a severity-weighted error metric (**WSCER**), and tests whether weighting the training loss by safety severity improves robustness where it matters most.
 
-**Authors:** Asmar Aliyeva, Ilaha Mustafayeva, Nazrin Abdullayeva · French-Azerbaijani University (UFAZ)
+**Authors:** Asmar Aliyeva, Ilaha Mustafayeva, Nazrin Abdullayeva
+**Affilation:** French-Azerbaijani University (UFAZ)
 **Supervisor:** Prof. Rauf Fatali
 **Period:** April – May 2026
 
