@@ -1,0 +1,6 @@
+model,wscer_pgd20
+Standard,0.8713
+FGSM-AT,0.4516
+FGSM-AT+ELLE,0.4752
+SW-AT+ELLE,0.4665
+PGD-AT,0.4014

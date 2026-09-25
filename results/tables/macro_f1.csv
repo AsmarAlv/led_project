@@ -1,0 +1,6 @@
+model,clean_macro_f1,fgsm_macro_f1,pgd20_macro_f1
+Standard,0.975,0.442,0.121
+FGSM-AT,0.906,0.708,0.503
+FGSM-AT+ELLE,0.906,0.684,0.484
+SW-AT+ELLE,0.905,0.678,0.485
+PGD-AT,0.863,0.657,0.575

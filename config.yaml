@@ -1,0 +1,18 @@
+dataset:
+  mean: [0.3337, 0.3064, 0.3171]
+  std:  [0.2672, 0.2564, 0.2629]
+  root: /kaggle/working/led_project/datasets
+  num_classes: 43
+  img_size: 64
+
+training:
+  batch_size: 32
+  test_batch_size: 64
+  epochs: 30
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0005
+  seed: 42
+
+model:
+  name: resnet18
