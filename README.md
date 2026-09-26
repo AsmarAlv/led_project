@@ -4,7 +4,7 @@
 
 Adversarial attacks, adversarial training and safety-aware evaluation on GTSRB
 
-<b>Tools:</b> PyTorch | GTSRB | FGSM/PGD | Grad-CAM | Kaggle (T4 GPU)<br>
+<b>Tools:</b> PyTorch · GTSRB · FGSM / PGD · Grad-CAM · Kaggle (T4 GPU)<br>
 <b>Authors:</b> Asmar Aliyeva, Ilaha Mustafayeva, Nazrin Abdullayeva<br>
 <b>Affiliation:</b> French-Azerbaijani University (UFAZ)<br>
 <b>Supervisor:</b> Prof. Rauf Fatali<br>
@@ -12,7 +12,7 @@ Adversarial attacks, adversarial training and safety-aware evaluation on GTSRB
 
 <br>
 
-<img src="results/fig6_adversarial_example_stop.png" width="620" alt="FGSM and PGD adversarial examples on a Stop sign">
+<img src="results/figures/fig6_adversarial_example_stop.png" width="620" alt="FGSM and PGD adversarial examples on a Stop sign">
 
 <sub>A Stop sign classified with 99.9% confidence is misclassified as "Speed limit 120" (98.5%) after a PGD-20 perturbation of ε = 8/255.</sub>
 
@@ -64,8 +64,8 @@ Accuracy in %. Lower WSCER is safer.
 
 <table>
   <tr>
-    <td width="55%"><img src="results/fig7_matrix_bars.png" alt="Accuracy of five models under clean, FGSM and PGD-20"></td>
-    <td width="45%"><img src="results/fig8_wscer.png" alt="WSCER under PGD-20"></td>
+    <td width="55%"><img src="results/figures/fig7_matrix_bars.png" alt="Accuracy of five models under clean, FGSM and PGD-20"></td>
+    <td width="45%"><img src="results/figures/fig8_wscer.png" alt="WSCER under PGD-20"></td>
   </tr>
   <tr>
     <td align="center"><sub>Accuracy on clean, FGSM and PGD-20 inputs</sub></td>
@@ -84,8 +84,8 @@ PGD uses a random start, so the value at ε = 8/255 differs slightly between thi
 
 <table>
   <tr>
-    <td width="50%"><img src="results/fig5_fgsm_vs_pgd.png" alt="FGSM vs PGD across epsilon"></td>
-    <td width="50%"><img src="results/fig9_gradcam_3x3.png" alt="Grad-CAM on a Stop sign"></td>
+    <td width="50%"><img src="results/figures/fig5_fgsm_vs_pgd.png" alt="FGSM vs PGD across epsilon"></td>
+    <td width="50%"><img src="results/figures/fig9_gradcam_3x3.png" alt="Grad-CAM on a Stop sign"></td>
   </tr>
   <tr>
     <td align="center"><sub>FGSM and PGD-20 on the standard model</sub></td>
@@ -100,12 +100,12 @@ PGD uses a random start, so the value at ε = 8/255 differs slightly between thi
 
 | | |
 |---|---|
-| <img src="results/fig1_class_distribution.png" alt="Class distribution"> | <img src="results/fig4_class_size_vs_robustness.png" alt="Class size vs robustness"> |
+| <img src="results/figures/fig1_class_distribution.png" alt="Class distribution"> | <img src="results/figures/fig4_class_size_vs_robustness.png" alt="Class size vs robustness"> |
 | <sub>GTSRB class distribution</sub> | <sub>Class size vs. robust accuracy under FGSM</sub> |
-| <img src="results/fig11_safety_8x8.png" alt="Safety-critical confusion matrix"> | <img src="results/fig10_gradcam_critical.png" alt="Grad-CAM on safety-critical signs"> |
+| <img src="results/figures/fig11_safety_8x8.png" alt="Safety-critical confusion matrix"> | <img src="results/figures/fig10_gradcam_critical.png" alt="Grad-CAM on safety-critical signs"> |
 | <sub>Confusion among safety-critical classes, SW-AT+ELLE under PGD-20</sub> | <sub>Grad-CAM on safety-critical signs: standard vs. SW-AT+ELLE</sub> |
 
-All figures and result tables (CSV) are in [`results/`](results/).
+All figures are in [`results/figures/`](results/figures/) and the result tables in [`results/tables/`](results/tables/).
 
 </details>
 
@@ -155,7 +155,9 @@ To run locally, install the dependencies with `pip install -r requirements.txt` 
 ├── gtsrb_safety_weighted_at.ipynb
 ├── config.yaml
 ├── requirements.txt
-└── results/          # figures and result tables
+└── results/
+    ├── figures/
+    └── tables/
 ```
 
 Model weights are not included in the repository.
