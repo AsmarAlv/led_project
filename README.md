@@ -4,7 +4,7 @@
 
 Adversarial attacks, adversarial training and safety-aware evaluation on GTSRB
 
-<b>Tools:</b> PyTorch · GTSRB · FGSM / PGD · Grad-CAM · Kaggle (T4 GPU)<br>
+<b>Tools:</b> PyTorch | GTSRB | FGSM/PGD | Grad-CAM | Kaggle (T4 GPU)<br>
 <b>Authors:</b> Asmar Aliyeva, Ilaha Mustafayeva, Nazrin Abdullayeva<br>
 <b>Affiliation:</b> French-Azerbaijani University (UFAZ)<br>
 <b>Supervisor:</b> Prof. Rauf Fatali<br>
